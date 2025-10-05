@@ -139,9 +139,9 @@ else
 $PSDefaultParameterValues['*:Encoding'] = 'utf8'
 chcp 65001
 
-# Criado por Rikey e traduzido por azurejoga
-# https://github.com/semazurek/ET-Optimizer
-# https://www.paypal.com/paypalme/rikey
+# Criado por Gtweaks
+# https://discord.com/invite/FPct5SfUrB
+# https://media.discordapp.net/attachments/1222023870589042718/1416891895426060359/image.png?ex=68e385a8&is=68e23428&hm=df3b675be08b5504f3ee20bbdaa1780aed2729f786b2966aeefaae0a21886953&=&format=webp&quality=lossless&width=467&height=968
 
 $versionPS="gtweaks optimizer script.   -   "+$ProcessorType+" "+[math]::round($RAMGet)+" GB RAM";
 $versionRAW="gtweaks optimizer script."
@@ -1427,7 +1427,7 @@ $mainMenu.ForeColor = [System.Drawing.ColorTranslator]::FromHtml($mainforecolor)
 [scriptblock]$backup= {Backup}; 
 [scriptblock]$restore= {rstrui.exe}; 
 [scriptblock]$about= {About}; 
-[scriptblock]$donate= {start https://www.paypal.com/paypalme/rikey}; 
+[scriptblock]$donate= {start https://media.discordapp.net/attachments/1222023870589042718/1416891895426060359/image.png?ex=68e385a8&is=68e23428&hm=df3b675be08b5504f3ee20bbdaa1780aed2729f786b2966aeefaae0a21886953&=&format=webp&quality=lossless&width=467&height=968}; 
 [scriptblock]$extras= {Extras}; 
 (addMenuItem -ParentItem ([ref]$mainMenu) -ItemName 'mnuFile' -ItemText 'Backup' -ScriptBlock $backup); 
 (addMenuItem -ParentItem ([ref]$mainMenu) -ItemName 'mnuFile' -ItemText 'Restaurar' -ScriptBlock $restore); 
@@ -1448,8 +1448,8 @@ Write-Host '                                /_____/   /_/     '
 Write-Host ''
 Write-Host '                          [-] Version: '$versionShort
 Write-Host '                          [-] Build: Public                          '
-Write-Host '                          [-] Created by: Rikey                      '
-Write-Host '                          [-] Last update: 30.07.2023                '
+Write-Host '                          [-] Created by: Gtweaks                      '
+Write-Host '                          [-] Last update: 05.10.2025                '
 Write-Host ''
 Write-Host '                        - Always have a backup plan. - '
 Write-Host '';Write-Host '';Write-Host '';Write-Host '';Write-Host ''
@@ -2687,4 +2687,5 @@ $msgBody = "Todos os comandos foram aplicados, é recomendado reniciar o seu com
 $msgTitle = $versionRAW
 $msgButton = 'OK'
 $msgImage = 'Information'
+
 $Result = [System.Windows.MessageBox]::Show($msgBody,$msgTitle,$msgButton,$msgImage)
