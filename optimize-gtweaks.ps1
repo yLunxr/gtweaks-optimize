@@ -139,9 +139,9 @@ else
 $PSDefaultParameterValues['*:Encoding'] = 'utf8'
 chcp 65001
 
-# Criado por Gtweaks
+# Criado por gtweaks
 # https://discord.com/invite/FPct5SfUrB
-# https://media.discordapp.net/attachments/1222023870589042718/1416891895426060359/image.png?ex=68e385a8&is=68e23428&hm=df3b675be08b5504f3ee20bbdaa1780aed2729f786b2966aeefaae0a21886953&=&format=webp&quality=lossless&width=467&height=968
+# https://ibb.co/bkbL9X2
 
 $versionPS="gtweaks optimizer script.   -   "+$ProcessorType+" "+[math]::round($RAMGet)+" GB RAM";
 $versionRAW="gtweaks optimizer script."
@@ -1427,7 +1427,7 @@ $mainMenu.ForeColor = [System.Drawing.ColorTranslator]::FromHtml($mainforecolor)
 [scriptblock]$backup= {Backup}; 
 [scriptblock]$restore= {rstrui.exe}; 
 [scriptblock]$about= {About}; 
-[scriptblock]$donate= {start https://media.discordapp.net/attachments/1222023870589042718/1416891895426060359/image.png?ex=68e385a8&is=68e23428&hm=df3b675be08b5504f3ee20bbdaa1780aed2729f786b2966aeefaae0a21886953&=&format=webp&quality=lossless&width=467&height=968}; 
+[scriptblock]$donate= {start https://ibb.co/bkbL9X2}; 
 [scriptblock]$extras= {Extras}; 
 (addMenuItem -ParentItem ([ref]$mainMenu) -ItemName 'mnuFile' -ItemText 'Backup' -ScriptBlock $backup); 
 (addMenuItem -ParentItem ([ref]$mainMenu) -ItemName 'mnuFile' -ItemText 'Restaurar' -ScriptBlock $restore); 
@@ -1448,7 +1448,7 @@ Write-Host '                                /_____/   /_/     '
 Write-Host ''
 Write-Host '                          [-] Version: '$versionShort
 Write-Host '                          [-] Build: Public                          '
-Write-Host '                          [-] Created by: Gtweaks                      '
+Write-Host '                          [-] Created by: gtweaks                      '
 Write-Host '                          [-] Last update: 05.10.2025                '
 Write-Host ''
 Write-Host '                        - Always have a backup plan. - '
@@ -2687,5 +2687,4 @@ $msgBody = "Todos os comandos foram aplicados, é recomendado reniciar o seu com
 $msgTitle = $versionRAW
 $msgButton = 'OK'
 $msgImage = 'Information'
-
 $Result = [System.Windows.MessageBox]::Show($msgBody,$msgTitle,$msgButton,$msgImage)
